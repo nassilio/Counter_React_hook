@@ -7,8 +7,8 @@ function Counter() {
 
   return (
     <div>
-      <p>Le compteur est à : {count + 3} </p>
-      <input value={count + 3} onChange={e => setCount(e.target.value)}></input>
+      <p>Le compteur est à : {count} </p>
+      <input type="number" value={count} onChange={e => setCount(e.target.value)}></input>
       <button onClick={() => setCount(count + 1)}>+1</button>
       <button onClick={() => setCount(count - 1)}>-1</button>
     </div>
